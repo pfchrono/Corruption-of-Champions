@@ -14167,8 +14167,7 @@ function startCombat(monsterNum:Number):void {
 		monster.createCock();
 		monster.cocks[0].cockLength = rand(2) + 11;
 		monster.cocks[0].cockThickness = 2.5;
-		monster.cocks[0].cockType = rand(3);
-		if(monster.cocks[0].cockType == CockTypesEnum.HUMAN) monster.cocks[0].cockType = CockTypesEnum.DEMON;
+		monster.cocks[0].cockType = CockTypesEnum.DEMON;
 		monster.balls = 2;
 		monster.cumMultiplier = 3;
 		monster.ballSize = 1;
